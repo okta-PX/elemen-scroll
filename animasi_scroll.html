@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  /* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* warna background  */
+body {
+  background: #1d212b;
+}
+
+/* pengaturan layout section */
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* warna tulisan di setiap tag turunan yang ganjil dari tag section */
+section:nth-child(odd) {
+  color: #fff;
+}
+
+/* warna tulisan dan warna background di setiap tag turunan yang genap dari tag section */
+section:nth-child(even) {
+  color: #1d212b;
+  background: #fff;
+}
+
+/* margin tag section */
+section .container {
+  margin: 100px;
+}
+
+section h1 {
+  font-size: 4rem;
+}
+
+/* atur ukuran dan kapitalisasi huruf dari setiap tag h2 di dalam tag section */
+section h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+/* layout class kotak */
+section .kotak {
+  display: flex;
+}
+
+/* memberikan warna background, margin, dan padding pada class text di dalam class kotak */
+section .text {
+  background: red;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* merubah ukuran text, memberikan efek huruf kapital dan memberikan margin pada tag h3 di dalam class kotak */
+section .kotak h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* memberikan trasnsisi dan pergerakan secara horizontal pada class element sekaligus menghilankan elementnya*/
+.elemen {
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+/* memunculkan kembali elementnya */
+.tampil {
+  position: relative;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* media query */
+@media (max-width: 900px) {
+  section h1 {
+    font-size: 3rem;
+  }
+
+  section .kotak {
+    flex-direction: column;
+  }
+}
+    </style>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memunculkan Elemen Ketika Scroll</title>
+</head>
+
+<body>
+    <!-- Judul atas -->
+    <section>
+        <h1>Memunculkan Elemen Ketika Scroll dengan class elemen</h1>
+    </section>
+
+    <!-- element kotak 1 -->
+    <section>
+        <div class="container elemen">
+            <h2>judul</h2>
+            <div class="kotak">
+                <div class="text">
+                    <h3>Judul text</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloremque voluptatum laboriosam, eaque deserunt sunt repellat
+                        explicabo vero asperiores, necessitatibus commodi temporibus
+                        assumenda fugit blanditiis labore rem obcaecati laborum. Quas,
+                        explicabo.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>kotak Title</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloremque voluptatum laboriosam, eaque deserunt sunt repellat
+                        explicabo vero asperiores, necessitatibus commodi temporibus
+                        assumenda fugit blanditiis labore rem obcaecati laborum. Quas,
+                        explicabo.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>kotak Title</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloremque voluptatum laboriosam, eaque deserunt sunt repellat
+                        explicabo vero asperiores, necessitatibus commodi temporibus
+                        assumenda fugit blanditiis labore rem obcaecati laborum. Quas,
+                        explicabo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end element kotak 1 -->
+    <!-- element kotak 1 -->
+    <section>
+        <div class="container elemen">
+            <h2>judul</h2>
+            <div class="kotak">
+                <div class="text">
+                    <h3>Judul text</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloremque voluptatum laboriosam, eaque deserunt sunt repellat
+                        explicabo vero asperiores, necessitatibus commodi temporibus
+                        assumenda fugit blanditiis labore rem obcaecati laborum. Quas,
+                        explicabo.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>kotak Title</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloremque voluptatum laboriosam, eaque deserunt sunt repellat
+                        explicabo vero asperiores, necessitatibus commodi temporibus
+                        assumenda fugit blanditiis labore rem obcaecati laborum. Quas,
+                        explicabo.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>kotak Title</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloremque voluptatum laboriosam, eaque deserunt sunt repellat
+                        explicabo vero asperiores, necessitatibus commodi temporibus
+                        assumenda fugit blanditiis labore rem obcaecati laborum. Quas,
+                        explicabo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end element kotak 1 -->
+    <!-- element kotak 1 -->
+    <section>
+        <div class="container elemen">
+            <h2>judul</h2>
+            <div class="kotak">
+                <div class="text">
+                    <h3>Judul text</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloremque voluptatum laboriosam, eaque deserunt sunt repellat
+                        explicabo vero asperiores, necessitatibus commodi temporibus
+                        assumenda fugit blanditiis labore rem obcaecati laborum. Quas,
+                        explicabo.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>kotak Title</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloremque voluptatum laboriosam, eaque deserunt sunt repellat
+                        explicabo vero asperiores, necessitatibus commodi temporibus
+                        assumenda fugit blanditiis labore rem obcaecati laborum. Quas,
+                        explicabo.
+                    </p>
+                </div>
+                <div class="text">
+                    <h3>kotak Title</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Doloremque voluptatum laboriosam, eaque deserunt sunt repellat
+                        explicabo vero asperiores, necessitatibus commodi temporibus
+                        assumenda fugit blanditiis labore rem obcaecati laborum. Quas,
+                        explicabo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end element kotak 1 -->
+
+    <script>
+  // menangkap event scroll
+    window.addEventListener("scroll", muncul);
+
+    // fungsi untuk memberikan efek elemen muncul ketika scroll
+    function muncul() {
+        // menangkap setiap tag dengan class elemen
+        let elements = document.querySelectorAll(".elemen");
+        //perulangan untuk setiap tag dengan class elemen
+        for (let i = 0; i < elements.length; i++) {
+            //   mengambil ukuran tinggi layar
+            let tinggiLayar = window.innerHeight;
+            //menangkap ukuran elemen dan posisinya relatif terhadap viewport
+            let jarakAtasElemen = elements[i].getBoundingClientRect().top;
+            // menentukan ukuran scroll untuk memunculkan elemen
+            let ukuranScroll = 150;
+            // jika jarak atas elemen kurang dari tinggi layar dikurangi ukuran scroll maka tambahkan class tampil di setiap tag dengan class elemen
+            if (jarakAtasElemen < tinggiLayar - ukuranScroll) {
+                elements[i].classList.add("tampil");
+            }
+            // jika tidak maka hapus class tampil
+            else {
+                elements[i].classList.remove("tampil");
+            
+            
+            }
+        }
+    }
+    </script>
+</body>
+</html>
